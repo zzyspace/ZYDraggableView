@@ -13,6 +13,7 @@
 		5A60226C1D7028500026451A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A60226A1D7028500026451A /* Main.storyboard */; };
 		5A60226E1D7028500026451A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A60226D1D7028500026451A /* Assets.xcassets */; };
 		5A6022711D7028500026451A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A60226F1D7028500026451A /* LaunchScreen.storyboard */; };
+		5A60227B1D70290B0026451A /* UIView+ZYDraggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A60227A1D70290B0026451A /* UIView+ZYDraggable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5A60226D1D7028500026451A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A6022701D7028500026451A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A6022721D7028500026451A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6022791D70290B0026451A /* UIView+ZYDraggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYDraggable.h"; sourceTree = "<group>"; };
+		5A60227A1D70290B0026451A /* UIView+ZYDraggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYDraggable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5A6022601D7028500026451A /* ZYDraggableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5A6022781D70290B0026451A /* ZYDraggableView */,
 				5A6022641D7028500026451A /* AppDelegate.h */,
 				5A6022651D7028500026451A /* AppDelegate.m */,
 				5A6022671D7028500026451A /* ViewController.h */,
@@ -78,6 +82,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		5A6022781D70290B0026451A /* ZYDraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				5A6022791D70290B0026451A /* UIView+ZYDraggable.h */,
+				5A60227A1D70290B0026451A /* UIView+ZYDraggable.m */,
+			);
+			path = ZYDraggableView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -152,6 +165,7 @@
 				5A6022691D7028500026451A /* ViewController.m in Sources */,
 				5A6022661D7028500026451A /* AppDelegate.m in Sources */,
 				5A6022631D7028500026451A /* main.m in Sources */,
+				5A60227B1D70290B0026451A /* UIView+ZYDraggable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZYDraggableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongbu.ZYDraggableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZYDraggableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tongbu.ZYDraggableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

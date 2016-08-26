@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIView+ZYDraggable.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatarView;
 
 @end
 
@@ -16,12 +19,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // UIImageView ignored user events by default, so set
+    // `userInteractionEnabled` to YES for receive touch events.
+    self.avatarView.userInteractionEnabled = YES;
+    
+    // Make avatarView draggable
+    [self.avatarView makeDraggable];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    // Update snap point when layout occured
+    [self.avatarView updateSnapPoint];
 }
 
 @end
