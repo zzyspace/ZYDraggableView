@@ -1,6 +1,8 @@
 # ZYDraggableView
 - A UIView category which make view become draggable.
 
+![](./preview.gif)
+
 ## Usage
 
 #### 1.Make view draggable
