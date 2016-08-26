@@ -34,6 +34,11 @@ Add manually:
 - Drag `ZYDraggableView` folder to your project.
 - Import header file: `#import "ZYDraggableView.h"`
 
+## FAQ
+
+- Sometimes draggable view was blocked by other views.
+This is depend on draggable view's hierarchical on superview. You can call `-bringSubviewToFront:` to make draggable above sibling views.
+
 ## License
 
 ZYDraggableView is released under the MIT license. See LICENSE for details.
