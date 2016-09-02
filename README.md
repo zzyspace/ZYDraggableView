@@ -38,7 +38,7 @@ Add manually:
 
 1. Sometimes draggable view was blocked by other views.
 
-> This is depend on draggable view's hierarchical on superview. You can call `-bringSubviewToFront:` to make draggable above sibling views.
+> This is depend on draggable view's hierarchical on superview. You can call `-bringSubviewToFront:` to make draggable view above sibling views.
 
 ## License
 
