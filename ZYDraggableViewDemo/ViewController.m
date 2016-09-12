@@ -26,6 +26,7 @@
     
     // Make avatarView draggable
     [self.avatarView makeDraggable];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)viewDidLayoutSubviews
