@@ -83,8 +83,8 @@
              pan.state == UIGestureRecognizerStateCancelled ||
              pan.state == UIGestureRecognizerStateFailed)
     {
-        [self.zy_animator removeAllBehaviors];
         [self.zy_animator addBehavior:self.zy_snapBehavior];
+        [self.zy_animator removeBehavior:self.zy_attachmentBehavior];
     }
 }
 
