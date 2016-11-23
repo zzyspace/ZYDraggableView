@@ -283,7 +283,7 @@
 				INFOPLIST_FILE = ZYDraggableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongbu.ZYDraggableViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzy.ZYDraggableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -296,7 +296,7 @@
 				INFOPLIST_FILE = ZYDraggableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tongbu.ZYDraggableViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzy.ZYDraggableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -320,6 +320,7 @@
 				5A6022771D7028500026451A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

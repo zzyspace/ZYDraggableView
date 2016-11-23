@@ -28,12 +28,4 @@
     [self.avatarView makeDraggable];
 }
 
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-    
-    // Update snap point when layout occured
-    [self.avatarView updateSnapPoint];
-}
-
 @end
