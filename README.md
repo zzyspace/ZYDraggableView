@@ -6,21 +6,12 @@
 ## Feature
 
  - [x] Make view become draggable which inherited from UIView.
- - [x] Integrate draggable view just one line of code at least.
+ - [x] Integrate draggable view **just one line of code**.
 
 ## Usage
 
-#### 1.Make view draggable
-
 ```Objective-C
 [view makeDraggable];
-```
-
-#### 2.If draggable view will be layouted by superview, update snap point after layout. 
-
-```Objective-C
-// call `-updateSnapPoint` in `-layoutSubviews` or `-viewDidLayoutSubviews`
-[view updateSnapPoint];
 ```
 
 ## Requirements
